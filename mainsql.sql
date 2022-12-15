@@ -1,19 +1,19 @@
 CREATE TABLE tbSport(
-    sport_id NUMBER,
+    sport_id NUMBER NOT NULL,
     PRIMARY KEY(sport_id),
     sport_name VARCHAR(255) NOT NULL UNIQUE
 );
 
 CREATE TABLE tbCustomer(
-    customer_id NUMBER,
+    customer_id NUMBER NOT NULL,
     PRIMARY KEY(customer_id),
     address VARCHAR(255) NOT NULL, 
     gender CHAR(1) NOT NULL CHECK (gender = 'M' or gender = 'F'),
-    cust_name VARCHAR(255) NOT NULL CHECK(cust_name !='')
+    cust_name VARCHAR(255) NOT NULL CHECK(cust_name !='' AND REGEXP_LIKE(cust_name,'^.+[:space:].+') AND REGEXP_COUNT(cust_name, ' ')=1)
 );
 
 CREATE TABLE tbCustPrefSport(
-  pref_id NUMBER,
+  pref_id NUMBER NOT NULL,
   PRIMARY KEY(pref_id),
   customer_id NUMBER NOT NULL,
   FOREIGN KEY(customer_id) REFERENCES tbCustomer(customer_id),
@@ -22,23 +22,23 @@ CREATE TABLE tbCustPrefSport(
 );
 
 CREATE TABLE tbSupplier(
-    supplier_id NUMBER,
+    supplier_id NUMBER NOT NULL,
     PRIMARY KEY(supplier_id),
     company_name VARCHAR(255) NOT NULL UNIQUE,
     address VARCHAR(255)
 );
 
 CREATE TABLE tbProduct(
-    product_id NUMBER,
+    product_id NUMBER NOT NULL,
     PRIMARY KEY(product_id),
     price_per_unit NUMBER(10,4) DEFAULT 0,
-    amount_in_inv NUMBER DEFAULT 0 CHECK(amount_in_inv >= ),
+    amount_in_inv NUMBER DEFAULT 0 CHECK(amount_in_inv >= 0),
     amount_requested NUMBER DEFAULT 0,
     amount_ordered NUMBER DEFAULT 0
 );
 
 CREATE TABLE tbProductSupplier(
-    rel_id NUMBER,
+    rel_id NUMBER NOT NULL,
     PRIMARY KEY(rel_id),
     product_id NUMBER NOT NULL,
     supplier_id NUMBER NOT NULL,
@@ -47,7 +47,7 @@ CREATE TABLE tbProductSupplier(
 );
 
 CREATE TABLE tbOrders(
-    order_id NUMBER,
+    order_id NUMBER NOT NULL,
     PRIMARY KEY(order_id),
     customer_id NUMBER NOT NULL,
     prod_sup_id NUMBER NOT NULL,
