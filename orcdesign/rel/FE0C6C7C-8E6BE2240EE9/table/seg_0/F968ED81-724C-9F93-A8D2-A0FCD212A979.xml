@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F968ED81-724C-9F93-A8D2-A0FCD212A979" name="tbCustomer">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>F4D8BFB3-0B4F-00D9-0E42-9D48A99E67BF</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="customer_id" id="77D85834-2487-7A3A-137C-7B29E581D27B">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>E66DBB21-A406-AD3E-19F4-405C2D38D76B</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="6FE6DD83-D8F4-55C4-547A-00674D94CF82">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>43CF6CB7-1E62-A057-728F-63BC6AD04C01</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gender" id="E3D6EA53-CC4E-50C8-93D4-F9D9BDB6C18B">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>C39F54EC-40C2-0FD1-288F-892AEC384680</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="Female"/>
+<valueDef value="M" description="Male"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_name" id="ADC86CA5-8A26-DFEC-B8A2-5005B8355558">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>7A8D917E-6888-0C2C-1440-CF140F6E51BD</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF7D896B-4B35-689B-7585-3891F5EB1740" name="tbCustomer_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>E61A9CC7-71DB-D2EA-C37C-1D0F818D2079</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77D85834-2487-7A3A-137C-7B29E581D27B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

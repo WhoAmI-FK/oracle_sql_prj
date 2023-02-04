@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F4D8BFB3-0B4F-00D9-0E42-9D48A99E67BF" name="tbCustomer">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4C3A6D52-66E4-3D29-9A4F-A4E3DE2F84F2" name="tbOrders">
 <createdBy>User</createdBy>
-<createdTime>2022-12-14 23:45:16 UTC</createdTime>
+<createdTime>2022-12-15 21:26:42 UTC</createdTime>
 <ownerDesignName>orcdesign</ownerDesignName>
 <engineerTo>
 <item key="FE0C6C7C-71D7-21A8-A9C1-8E6BE2240EE9" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="customer_id" id="E66DBB21-A406-AD3E-19F4-405C2D38D76B">
+<Attribute name="order_id" id="5368C370-AAFF-2E33-3DCD-5C6626B07E5D">
 <createdBy>User</createdBy>
-<createdTime>2022-12-14 23:45:26 UTC</createdTime>
+<createdTime>2022-12-15 21:27:01 UTC</createdTime>
 <ownerDesignName>orcdesign</ownerDesignName>
 <engineerTo>
 <item key="FE0C6C7C-71D7-21A8-A9C1-8E6BE2240EE9" value="true"/>
@@ -27,54 +27,39 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="address" id="43CF6CB7-1E62-A057-728F-63BC6AD04C01">
+<Attribute name="rel_id" id="9403ABF4-9124-C281-DA6A-2DBA94C4B6A9">
 <createdBy>User</createdBy>
-<createdTime>2022-12-14 23:45:48 UTC</createdTime>
+<createdTime>2022-12-15 21:29:42 UTC</createdTime>
+<generatorID>77EBBB8D-9892-7F06-4973-02B5C5568FED</generatorID>
 <ownerDesignName>orcdesign</ownerDesignName>
 <engineerTo>
 <item key="FE0C6C7C-71D7-21A8-A9C1-8E6BE2240EE9" value="true"/>
 </engineerTo>
+<referedAttribute>A04410E7-1AAA-3AAF-4A9D-27076E06EFED</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255</dataTypeSize>
-<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="gender" id="C39F54EC-40C2-0FD1-288F-892AEC384680">
+<Attribute name="customer_id" id="FE52D00C-09CD-6080-9083-047202B5FCED">
 <createdBy>User</createdBy>
-<createdTime>2022-12-14 23:46:18 UTC</createdTime>
+<createdTime>2022-12-15 21:30:27 UTC</createdTime>
+<generatorID>B8AF24E1-3475-746C-C064-F987465B5A7A</generatorID>
 <ownerDesignName>orcdesign</ownerDesignName>
 <engineerTo>
 <item key="FE0C6C7C-71D7-21A8-A9C1-8E6BE2240EE9" value="true"/>
 </engineerTo>
+<referedAttribute>E66DBB21-A406-AD3E-19F4-405C2D38D76B</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<listOfValues>
-<valueDef value="F" description="Female"/>
-<valueDef value="M" description="Male"/>
-</listOfValues>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="cust_name" id="7A8D917E-6888-0C2C-1440-CF140F6E51BD">
-<createdBy>User</createdBy>
-<createdTime>2022-12-15 20:58:28 UTC</createdTime>
-<ownerDesignName>orcdesign</ownerDesignName>
-<engineerTo>
-<item key="FE0C6C7C-71D7-21A8-A9C1-8E6BE2240EE9" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255</dataTypeSize>
-<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="E61A9CC7-71DB-D2EA-C37C-1D0F818D2079" name="tbCustomer PK">
+<identifier id="8055974B-FF5B-2787-1FF1-75B983DE1EC3" name="tbOrders PK">
 <createdBy>User</createdBy>
-<createdTime>2022-12-14 23:45:46 UTC</createdTime>
+<createdTime>2022-12-15 21:27:25 UTC</createdTime>
 <ownerDesignName>orcdesign</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
@@ -82,7 +67,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>E66DBB21-A406-AD3E-19F4-405C2D38D76B</attributeRef>
+<attributeRef>5368C370-AAFF-2E33-3DCD-5C6626B07E5D</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

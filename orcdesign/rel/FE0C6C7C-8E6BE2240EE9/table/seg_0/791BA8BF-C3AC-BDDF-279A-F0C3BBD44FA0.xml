@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="791BA8BF-C3AC-BDDF-279A-F0C3BBD44FA0" name="tbProduct">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>4F7CA854-79C0-0C8D-0AF6-7E763ECAE58D</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="product_id" id="68BB6B8D-E148-B376-D990-E00D9225C71D">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>713F2911-D3D3-B962-396E-05B87A8086DC</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price_per_unit" id="DCD3C35D-7CF2-4487-54CD-A458CC094D06">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>44B808D2-4347-1B7B-219E-B7363F00053B</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,10,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="amount_in_inv" id="42FB0EDD-7DB3-7A62-0B51-20810EB2BB44">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>F50C2910-2070-EB3B-D762-152DB03B3837</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="amount_requested" id="EFA437CA-572D-1220-D83C-03D5DE2F860C">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>E2DD428A-03A4-7872-F498-77EACC20A168</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="amount_ordered" id="CF1AB1FC-D397-8C3D-7492-95EC40D577CF">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>AFAA4D8A-60E4-4DF6-8780-AFD56F69F6AE</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="696D9E32-DE2E-DD9E-C0D7-101DFD010512" name="tbProduct_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>F174E68A-F457-2F98-AB82-DBBB6EB5A9C2</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="68BB6B8D-E148-B376-D990-E00D9225C71D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CDDA2E39-3DD5-22A0-7CCF-56115A28F591" name="tbProductSupplier">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>A1203E5F-A6BA-8FC1-5206-9EE30097C20B</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rel_id" id="F7E7975B-A31B-1460-79F2-81B274D82834">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>A04410E7-1AAA-3AAF-4A9D-27076E06EFED</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tbSupplier_supplier_id" id="5E2ED31F-3A58-5170-0D2A-3AC5749A7A00">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>EA3CF82C-1C1E-41C3-7CE8-362871E0ED2A</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="11627768-AB60-C3FC-6135-2826CEBB2A1B" referredColumn="88174BD0-DA0C-E8D6-4EB2-047865C4781E"/>
+</associations>
+</Column>
+<Column name="tbProduct_product_id" id="168852F0-0862-1B14-E340-F1EA895059B2">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>3C9DC121-85D1-D22C-08BA-B6F6CFCBF296</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6890F4E5-08D7-245B-2159-413AA972F96F" referredColumn="68BB6B8D-E148-B376-D990-E00D9225C71D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4BBE7B42-1A65-382E-FF57-C107AA2ECB30" name="tbProductSupplier_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>DDA340D7-8129-72AE-ACA9-BD126F7DD33D</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7E7975B-A31B-1460-79F2-81B274D82834"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C27A10AE-4A5B-CC89-7648-B1B9E0DAB3FB" name="tbProductSupplier_tbSupplier_FK">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>8815FFF2-772F-EFA1-6408-1A5939DB5E75</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E2ED31F-3A58-5170-0D2A-3AC5749A7A00"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="544FA887-89AB-1FAA-8175-75C872CEBF0F" name="tbProductSupplier_tbProduct_FK">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>A1346ED0-38F4-1A87-8B3E-FB8410E02366</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="168852F0-0862-1B14-E340-F1EA895059B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

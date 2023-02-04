@@ -350,3 +350,32 @@ GROUP BY customer_id
 )
 SELECT cus.cust_name, all_orders.NumOfOrders FROM all_orders, tbCustomer cus
 WHERE  cus.customer_id = all_orders.cid;
+
+/* NUM 21 OUTER JOIN */
+
+SELECT cus.cust_name, COUNT(cus.cust_name) NumOfOrds FROM tbOrders ord
+RIGHT OUTER JOIN tbCustomer cus ON(ord.customer_id = cus.customer_id)
+GROUP BY(cus.cust_name)
+ORDER BY 2;
+
+/* Num 22 CROSS JOIN */
+
+SELECT cus.cust_name, sup.company_name FROM tbOrders ord
+CROSS JOIN tbCustomer cus
+CROSS JOIN tbProductSupplier prs
+CROSS JOIN tbSupplier sup;
+
+/* Num 23 INNER JOIN */
+
+SELECT cus.cust_name, sp.sport_name FROM tbCustPrefSport proxy
+INNER JOIN  tbCustomer cus ON cus.customer_id = proxy.customer_id
+INNER JOIN tbSport sp ON proxy.sport_id = sp.sport_id;
+
+/* Num 24 CASE statement */
+SELECT sport_name, 
+(CASE
+  WHEN sport_name = 'MMA' THEN 'Mixed Martial Arts'
+  ELSE sport_name
+  END 
+) AS sport
+FROM tbSport;

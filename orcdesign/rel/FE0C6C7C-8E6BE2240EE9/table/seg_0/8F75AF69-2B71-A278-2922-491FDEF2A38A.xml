@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8F75AF69-2B71-A278-2922-491FDEF2A38A" name="tbSupplier">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>EEFD1EBF-E548-CC30-1376-CE8DAC087BB3</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="supplier_id" id="88174BD0-DA0C-E8D6-4EB2-047865C4781E">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>A9EE1D5C-FF5F-D23E-5E2C-BD1A7E6F587E</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="company_name" id="F37EB2D5-D54F-2B77-0DEB-1FB9ECC06AA3">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>ED1B45C0-B212-4FC6-CF20-4BD06A66EA27</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="4B52467B-3B7A-E179-B231-995CA30D9AE5">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>24E4FC82-34F2-01DC-DC9D-86C5AF0C75F6</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6E91AAC9-7823-6EDD-90B5-80A1341FE189" name="tbSupplier_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>DD400964-CB4A-FB1C-2C67-8EBBB0F308D7</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88174BD0-DA0C-E8D6-4EB2-047865C4781E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD0D8147-A944-238F-0390-20FCFD617FB0" name="tbSupplier__UN">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>2F05BEF5-C41D-1FB5-4754-BF3089D160A9</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F37EB2D5-D54F-2B77-0DEB-1FB9ECC06AA3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

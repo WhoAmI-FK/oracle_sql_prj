@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F4D8BFB3-0B4F-00D9-0E42-9D48A99E67BF" name="tbCustomer">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EEFD1EBF-E548-CC30-1376-CE8DAC087BB3" name="tbSupplier">
 <createdBy>User</createdBy>
-<createdTime>2022-12-14 23:45:16 UTC</createdTime>
+<createdTime>2022-12-15 21:06:16 UTC</createdTime>
 <ownerDesignName>orcdesign</ownerDesignName>
 <engineerTo>
 <item key="FE0C6C7C-71D7-21A8-A9C1-8E6BE2240EE9" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="customer_id" id="E66DBB21-A406-AD3E-19F4-405C2D38D76B">
+<Attribute name="supplier_id" id="A9EE1D5C-FF5F-D23E-5E2C-BD1A7E6F587E">
 <createdBy>User</createdBy>
-<createdTime>2022-12-14 23:45:26 UTC</createdTime>
+<createdTime>2022-12-15 21:06:27 UTC</createdTime>
 <ownerDesignName>orcdesign</ownerDesignName>
 <engineerTo>
 <item key="FE0C6C7C-71D7-21A8-A9C1-8E6BE2240EE9" value="true"/>
@@ -27,9 +27,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="address" id="43CF6CB7-1E62-A057-728F-63BC6AD04C01">
+<Attribute name="company_name" id="ED1B45C0-B212-4FC6-CF20-4BD06A66EA27">
 <createdBy>User</createdBy>
-<createdTime>2022-12-14 23:45:48 UTC</createdTime>
+<createdTime>2022-12-15 21:07:14 UTC</createdTime>
 <ownerDesignName>orcdesign</ownerDesignName>
 <engineerTo>
 <item key="FE0C6C7C-71D7-21A8-A9C1-8E6BE2240EE9" value="true"/>
@@ -40,26 +40,9 @@
 <dataTypeSize>255</dataTypeSize>
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="gender" id="C39F54EC-40C2-0FD1-288F-892AEC384680">
+<Attribute name="address" id="24E4FC82-34F2-01DC-DC9D-86C5AF0C75F6">
 <createdBy>User</createdBy>
-<createdTime>2022-12-14 23:46:18 UTC</createdTime>
-<ownerDesignName>orcdesign</ownerDesignName>
-<engineerTo>
-<item key="FE0C6C7C-71D7-21A8-A9C1-8E6BE2240EE9" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<listOfValues>
-<valueDef value="F" description="Female"/>
-<valueDef value="M" description="Male"/>
-</listOfValues>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="cust_name" id="7A8D917E-6888-0C2C-1440-CF140F6E51BD">
-<createdBy>User</createdBy>
-<createdTime>2022-12-15 20:58:28 UTC</createdTime>
+<createdTime>2022-12-15 21:32:57 UTC</createdTime>
 <ownerDesignName>orcdesign</ownerDesignName>
 <engineerTo>
 <item key="FE0C6C7C-71D7-21A8-A9C1-8E6BE2240EE9" value="true"/>
@@ -72,9 +55,9 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="E61A9CC7-71DB-D2EA-C37C-1D0F818D2079" name="tbCustomer PK">
+<identifier id="DD400964-CB4A-FB1C-2C67-8EBBB0F308D7" name="tbSupplier PK">
 <createdBy>User</createdBy>
-<createdTime>2022-12-14 23:45:46 UTC</createdTime>
+<createdTime>2022-12-15 21:07:09 UTC</createdTime>
 <ownerDesignName>orcdesign</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
@@ -82,8 +65,17 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>E66DBB21-A406-AD3E-19F4-405C2D38D76B</attributeRef>
+<attributeRef>A9EE1D5C-FF5F-D23E-5E2C-BD1A7E6F587E</attributeRef>
 </usedAttributes>
+</identifier>
+<identifier id="2F05BEF5-C41D-1FB5-4754-BF3089D160A9" name="Key_2">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:08:06 UTC</createdTime>
+<ownerDesignName>orcdesign</ownerDesignName>
+<engineerTo>
+<item key="FE0C6C7C-71D7-21A8-A9C1-8E6BE2240EE9" value="true"/>
+</engineerTo>
+<newElementsIDs>ED1B45C0-B212-4FC6-CF20-4BD06A66EA27</newElementsIDs>
 </identifier>
 </identifiers>
 </Entity>

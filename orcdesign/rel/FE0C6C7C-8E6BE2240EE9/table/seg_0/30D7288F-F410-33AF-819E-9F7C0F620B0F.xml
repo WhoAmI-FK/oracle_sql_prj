@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30D7288F-F410-33AF-819E-9F7C0F620B0F" name="Relation_6">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<ownerDesignName>orcdesign</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tbSport_sport_id" id="9E6EA613-F439-3CE9-0A14-B4A920C9098F">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<ownerDesignName>orcdesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="427A997E-F666-7965-0F67-F25EE4C511C3" referredColumn="BB748DFD-9B1C-03E7-181A-6EA764D7D211"/>
+</associations>
+</Column>
+<Column name="tbCustomer_customer_id" id="49FC34E7-D491-5871-917C-303DC049E425">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<ownerDesignName>orcdesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="32C9D81B-6911-C4C2-E102-49551DAA15CF" referredColumn="77D85834-2487-7A3A-137C-7B29E581D27B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="983F551C-559B-D8EE-20D6-76EE973C82F3" name="Relation_6_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<ownerDesignName>orcdesign</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E6EA613-F439-3CE9-0A14-B4A920C9098F"/>
+<colUsage columnID="49FC34E7-D491-5871-917C-303DC049E425"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC411AAB-393B-4360-57DF-2B7755157E63" name="Relation_6_tbSport_FK">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>E4C522FD-6EBC-5C41-F905-B11887B8650E</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E6EA613-F439-3CE9-0A14-B4A920C9098F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C02D62CF-52DE-1EC7-6C49-BD754E170420" name="Relation_6_tbCustomer_FK">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>E4C522FD-6EBC-5C41-F905-B11887B8650E</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49FC34E7-D491-5871-917C-303DC049E425"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

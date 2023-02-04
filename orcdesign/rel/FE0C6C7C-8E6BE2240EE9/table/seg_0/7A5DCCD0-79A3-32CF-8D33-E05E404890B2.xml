@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A5DCCD0-79A3-32CF-8D33-E05E404890B2" name="tbSport">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>C9DB1DDB-5EBD-677B-9862-DBD5E935F5B1</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sport_id" id="BB748DFD-9B1C-03E7-181A-6EA764D7D211">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>CF109136-B942-BB6B-EDC4-522320462C58</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sport_name" id="B92AF925-79A0-5495-1662-5A196146085E">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>0DD40020-66AC-7305-C128-6C4810586BE0</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D218E6CD-8D20-3682-5FAC-72D444A010F5" name="tbSport_PK">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>496C3DFD-0987-75F1-6838-039215D4BDBA</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB748DFD-9B1C-03E7-181A-6EA764D7D211"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="219EBD5F-76A6-BB81-3BAD-F05E417098C0" name="tbSport__UN">
+<createdBy>User</createdBy>
+<createdTime>2022-12-15 21:34:23 UTC</createdTime>
+<generatorID>2A7DFD80-63C3-F0F1-8CDA-D5C105D8A9B1</generatorID>
+<ownerDesignName>orcdesign</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B92AF925-79A0-5495-1662-5A196146085E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
